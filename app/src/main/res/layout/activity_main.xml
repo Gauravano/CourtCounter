@@ -10,8 +10,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.example.android.courtcounter.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <LinearLayout
     android:layout_width="wrap_content"
@@ -112,6 +117,16 @@
         android:text="FREE THROW"
         android:textStyle="bold"/></LinearLayout>
 
-
-
     </LinearLayout>
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="RESET"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="130dp"
+        android:onClick="reset"/>
+
+</LinearLayout>
